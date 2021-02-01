@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/*googleips 웹폰트 css 파일 불러오기*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Galada', cursive; */
+
+/*font-family: 'Noto Sans KR', sans-serif;*/ /*선택자 없이 혼자 있으면 자동으로 마진 패딩 생길수도있음 주석처리 하기*/
+
+/* 저장된 글꼴 파일 선언*/
+ /*@font-face { font-family : font_gothic;    
+                src : url(../font/NanumGothic.ttf); }*/
+/* 웹사이트의 글꼴 파일 선언*/
+/* @font-face { font-family : font_gothic;    
+                src : url(http://uhbee.com/nanum.eot) ; }   */
+
+
+@font-face {src : url("../font/cm33000001.ttf");
+            font-family: "batang"}
+
+
+* {margin:0; padding:0;}
+html{font-size:16px;}
+body{font-size:16px;
+      color:#222;
+      font-family: 'Nanum Gothic', sans-serif }
+ul, ol, li{list-style-type:none;}
+img, fieldset{border:none;vertical-align: middle}
+hr {clear:both; border:none;}
+a {color:inherit;text-decoration:none;
+   outline:0;}
+table{border-collapse:collapse}
+input, textarea,
+input::placeholder, textarea::placeholder {color:inherit;font-size:inherit;
+                                           font-family:inherit;
+                                           vertical-align: middle}
+button{outline:0; border:none; background: none;}
+
+.soung_only{display:block; text-indent:-99999999999px; height:0;}
+
+
+
+/***********************헤더*******************************/
+#all_nav{width:870px; height:350px; border:1px solid #bbb;
+        background-color:rgba(255,255,255,0.8);
+        box-shadow:1px 1px 10px rgba(0,0,0,0.5);
+        margin-bottom:50px;
+        transition:0.5s;
+        z-index:9999999;
+        position:absolute;
+        display:none;}
+#all_nav ul{float:left;
+            padding-right:30px; margin-top:23px; padding-left:30px;
+            border-right:1px solid #ccc;}
+#all_nav ul:last-child{border-right:0;}
+#all_nav ul > li{margin-bottom:0.5rem;
+                 padding:5px 7px;
+                 transition:0.5s;}
+#all_nav ul > li:hover{background-color: #f6eedf;
+                       padding:5px 7px;
+                       cursor: pointer;}
+
+
+
+
+#header .top_header{padding-top:10px;}
+#header .top_header .app{font-size:0.75rem;
+                         border: 1px solid #bbb; border-radius:3.125rem;
+                         display:inline; padding:4px 11px;
+                         color:#bbb; margin-left:1.5rem;
+                         cursor: pointer;}
+#header .top_header .app span{color:#544330; font-weight: bold;}
+#header .top_header ul > li {float:left;}
+#header .top_header ul > li:nth-child(2){padding-left:55rem;}
+#header .top_header ul > li:last-child{border-right:0; padding-right:0;}
+#header .top_header ul > .top_menu{font-size:0.875rem; border-right:1px solid #bbb; padding-right:10px; padding-left:10px;}
+
+#header .search_box{width:210px; height:36px;
+                   background-color: #eee; border-radius:50px;
+                   /*border:2px solid #544330;*/
+                   margin-bottom:20px;}
+#header .search_box .search_box_btn{width:22px; height:22px;
+                                    background: url(../images/search_button.png) no-repeat;
+                                    margin-top:5px; margin-right:5px;
+                                    cursor: pointer;}
+#header input{background: none; border:none;}
+
+#header .logo{margin-top:0.9375rem; margin-bottom:3.5625rem; padding-left:33.875rem;}
+
+#header #nav ul{transition:0.5s;}
+#header #nav ul > li{float:left; margin-right:3rem; margin-top:10px; }
+#header #nav ul > li:hover{font-weight: bold; color:#544330;}
+#header #nav ul > li:nth-child(7){margin-right:2.5rem;}
+
+#header #nav ul > li:nth-child(8){margin-right:15px; margin-top:0px;}
+#header #nav ul > li:nth-child(9){margin-right:15px; margin-top:0px;}
+#header #nav ul > li:last-child{margin-right:0; margin-top:0px;}
+
+#header #nav .burger_button span{display:block;
+                                 width:20px; height:2px;
+                                 background-color: #333;
+                                 margin-bottom:5px;
+                                 cursor: pointer;}
+#header #nav .burger_button span:last-child{margin-bottom:0;}
+
+
+
+
+/****************************푸터********************************/
+
+#footer .footer1{width:100%; height:100px; background-color: #f3f3d3; position:relative;}
+#footer .footer1 .list{padding-top:2.5rem; padding-left:16.4rem;}
+#footer .footer1 .list > li{float:left; margin-right:1.5rem;
+                            font-weight: bold;
+                            color:#544330;}
+
+#footer .footer1 .sns{position:absolute; top:2.5rem; right:0;}
+#footer .footer1 .sns > li{float:left; margin-right:3rem;}
+
+
+
+#footer .footer2{width:100%; height:250px; margin-top:4.0625rem; font-size:0.875rem;}
+#footer .footer2 li{float:left;
+                    width:calc((100% - 285px) / 4); margin-right:94px;}
+#footer .footer2 li:last-child{margin-right:0;}
+#footer .footer2 .footer_tit{color:#544330; font-weight: bold; margin-bottom:1.25rem;}
+#footer .footer2 .footer_tit a{font-weight: normal; border-bottom:1px solid #222;}
+#footer .footer2 .Copyright{margin-top:1.25rem; font-weight: bold;}
+
+
+
+
+@media all and (max-width:1180px;){
+      #header #nav ul > li{float:left; margin-right:3rem; margin-top:10px; }
+}
