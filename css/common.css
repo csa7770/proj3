@@ -2,6 +2,11 @@
 
 /*googleips 웹폰트 css 파일 불러오기*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+.nanumsquare {
+    font-family: 'NanumSquare', sans-serif !important;
+}
 /*font-family: 'Nanum Gothic', sans-serif;
 font-family: 'Nanum Myeongjo', serif;
 font-family: 'Galada', cursive; */
@@ -20,11 +25,12 @@ font-family: 'Galada', cursive; */
             font-family: "batang"}
 
 
+
 * {margin:0; padding:0;}
 html{font-size:16px;}
 body{font-size:16px;
       color:#222;
-      font-family: 'Nanum Gothic', sans-serif }
+      font-family: 'NanumSquare', sans-serif !important; }
 ul, ol, li{list-style-type:none;}
 img, fieldset{border:none;vertical-align: middle}
 hr {clear:both; border:none;}
@@ -42,6 +48,13 @@ button{outline:0; border:none; background: none;}
 
 
 /***********************헤더*******************************/
+.notice{font-size:0.875rem;
+        background-color: #544330;
+        color:#fff;
+        padding-top:10px; padding-bottom:10px;
+        text-align: center;
+        margin-bottom:10px;}
+
 #all_nav{width:870px; height:350px; border:1px solid #bbb;
         background-color:rgba(255,255,255,0.8);
         box-shadow:1px 1px 10px rgba(0,0,0,0.5);
@@ -97,6 +110,7 @@ button{outline:0; border:none; background: none;}
 #header #nav ul > li:nth-child(9){margin-right:15px; margin-top:0px;}
 #header #nav ul > li:last-child{margin-right:0; margin-top:0px;}
 
+#header #nav .burger_button{margin-right:5px;}
 #header #nav .burger_button span{display:block;
                                  width:20px; height:2px;
                                  background-color: #333;
@@ -105,11 +119,14 @@ button{outline:0; border:none; background: none;}
 #header #nav .burger_button span:last-child{margin-bottom:0;}
 
 
+#mo_nav{display:none;}
+
+
 
 
 /****************************푸터********************************/
 
-#footer .footer1{width:100%; height:100px; background-color: #f3f3d3; position:relative;}
+#footer .footer1{width:100%; height:100px; background-color: #F6EEDF; position:relative;}
 #footer .footer1 .list{padding-top:2.5rem; padding-left:16.4rem;}
 #footer .footer1 .list > li{float:left; margin-right:1.5rem;
                             font-weight: bold;
@@ -120,17 +137,83 @@ button{outline:0; border:none; background: none;}
 
 
 
-#footer .footer2{width:100%; height:250px; margin-top:4.0625rem; font-size:0.875rem;}
+#footer .footer2{width:100%; padding-top:4.0625rem; font-size:0.875rem;}
 #footer .footer2 li{float:left;
-                    width:calc((100% - 285px) / 4); margin-right:94px;}
+                    width:calc((100% - 285px) / 4); margin-right:94px;
+                    margin-bottom:4.625rem;}
 #footer .footer2 li:last-child{margin-right:0;}
 #footer .footer2 .footer_tit{color:#544330; font-weight: bold; margin-bottom:1.25rem;}
 #footer .footer2 .footer_tit a{font-weight: normal; border-bottom:1px solid #222;}
 #footer .footer2 .Copyright{margin-top:1.25rem; font-weight: bold;}
 
 
+@media all and (max-width:1240px) {
+
+        #header .top_header ul > li:nth-child(2){padding-left:53rem;}
+}
+
+@media all and (max-width:1190px) {
+
+        #header #nav ul > li{float:left; margin-right:2.5rem; margin-top:10px; }
+        #header #nav ul > li:nth-child(7){margin-right:2rem;}
+}
+
+@media all and (max-width:1180px) {
+
+        #header .top_header ul > li:nth-child(2){padding-left:50rem;}
+        #header .logo{padding-left:30rem;}
+        #nav{padding-left:1.2rem;}
+
+        #footer .footer1 .list{padding-left:13.5rem;}
+        #footer .footer1 .list > li{margin-right:0.9375rem;}
+        #footer .footer1 .sns > li{margin-right:1.9375rem;}
+
+        #footer .footer2 li{margin-right:30px; margin-left:2.5rem;}
+
+}
 
 
-@media all and (max-width:1180px;){
-      #header #nav ul > li{float:left; margin-right:3rem; margin-top:10px; }
+@media all and (max-width:1140px) {
+
+        #footer .footer1 .list{padding-left:10rem;}
+}
+
+@media all and (max-width:1088px) {
+
+        #footer .footer1 .list{padding-left:8rem;}
+}
+
+@media all and (max-width:1051px) {
+
+        #footer .footer1 .list{padding-left:6rem;}
+}
+
+@media all and (max-width:768px) {
+
+        #header .top_header{display:none;}
+        #header .logo{margin-top:0.9375rem; margin-bottom:3.5625rem; padding-left:18rem; display:none;}
+
+
+        #nav{display:none;}
+
+        #mo_nav{display:block;}
+        #mo_nav ul li{float:left; padding-top:1.1rem; padding-bottom:1.25rem;}
+        #mo_nav .burger_button1 {padding-left:1.4375rem; padding-top:1rem;}
+        #mo_nav .burger_button1 span{display:block;
+                width:20px; height:2px;
+                background-color: #333;
+                margin-bottom:5px;
+                cursor: pointer;}
+        #mo_nav .burger_button span:last-child{margin-bottom:0;}
+        #mo_nav .logo_mo{padding-left: 15.5rem; padding-bottom:0.8rem;}
+        #mo_nav ul li:nth-child(3){padding-left:11rem; padding-top:1.7rem;}
+        #mo_nav ul li:nth-child(4){padding-left:1rem; padding-top:1.7rem;}
+
+        #footer .footer1{height:141px;}
+        #footer .footer1 .list{padding-top:2.5rem; padding-left:2.5rem;}
+        #footer .footer1 .list > li{float:left; margin-right:1rem;}
+
+        #footer .footer1 .sns{position:absolute; top:5.5rem; right:15.5em;}
+
+        #footer .footer2 li {float: none; margin-bottom: 4.625rem; margin-right:0; width:50%;}
 }

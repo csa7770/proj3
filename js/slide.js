@@ -3,9 +3,11 @@ $(function(){
         lazyLoad: 'ondemand', // ondemand progressive anticipated
         infinite: true,
         dots : false,
-        //autoplay : true,			// 자동 스크롤 사용 여부
-        //autoplaySpeed : 5000
+        autoplay : true,			// 자동 스크롤 사용 여부
+        autoplaySpeed : 4000
       });
+
+
 
       $(".center").slick({
         dots: false,
