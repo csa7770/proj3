@@ -40,7 +40,7 @@
 
 #sec2{background-color: #F6EEDF; height:auto;}
 #sec2 div{padding-top:17px; text-align: center;
-    margin-right:3.0625rem; margin-bottom:1rem;}
+          margin-right:3.0625rem; margin-bottom:1rem;}
 #sec2 h2{padding-top:1.5rem; padding-bottom:1rem; color:#544330;
          font-size:1.47rem;}
 
@@ -182,6 +182,8 @@
     #sec1 .banner_cont3 p{font-size:1.1rem;}
 
     #sec2 h2{padding-bottom:1rem; font-size:1.3rem;}
+    #sec2 div{width:100%;}
+    #sec2{width:100%;}
 
     #sec4 .sec4_cont1{top:9rem; left:10rem;}
     #sec4 .sec4_cont1 h1{font-size:2.5rem; padding-bottom:20px;}
@@ -196,6 +198,8 @@
     #sec4 .sec4_cont3 span{font-size:1rem;}
 
     #sec5 ul li:first-child{margin-left:2rem;}
+
+    
 
 }
 
@@ -242,6 +246,8 @@
 
     #sec2 h2{font-size:1.1rem;}
     #sec2 span{font-size:0.9rem;}
+    #sec2 div{width:100%;}
+    #sec2{width:100%;}
 
     #sec4 .sec4_cont1{top:5rem; left:3.8rem;}
     #sec4 .sec4_cont1 h1{font-size:1.875rem; padding-bottom:15px;}
@@ -257,6 +263,19 @@
     #sec4 .sec4_cont3{top:37rem; right:20rem;}
     #sec4 .sec4_cont3 h2{font-size:2.1875rem; padding-top:15px;}
     #sec4 .sec4_cont3 span{font-size:1.125rem;}
+
+
+
+    #sec5 ul li{float:left; background-color: #eee; border-radius:10px;
+                width:30%; margin-right:20px; margin-bottom:9.375rem;}
+    #sec5 ul li:first-child{margin-left:1.1rem;}
+    #sec5 ul li:last-child{margin-right:0;}
+    #sec5 .sec5_img{width:100%;}
+    #sec5 .review_name{margin-left:1.2rem; margin-bottom:1rem; font-size:0.875rem;}
+    #sec5 .review_tit{font-size:1.2rem; font-weight: normal; margin-left:1.2rem;}
+    #sec5 .user{margin-left:1.1rem; margin-top:1.25rem; padding-bottom:1.25rem;}
+    #sec5 .like1{padding-left:5.2rem; margin-right:0.5rem;}
+    #sec5 .like{padding-left:7rem; margin-right:0.5rem;}
 
 
 }
